@@ -38,9 +38,6 @@ namespace Core.DataAccess.EntityFramework
             using (TContext context = new TContext())
             {
                 return context.Set<TEntity>().SingleOrDefault(filter);
-
-
-
             }
         }
 
@@ -58,8 +55,8 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var UpdatedEntity = context.Entry(entity);
-                UpdatedEntity.State = EntityState.Modified;
+                var updatedEntity = context.Entry(entity);
+                updatedEntity.State = EntityState.Modified;
                 context.SaveChanges();
             }
         }

@@ -1,4 +1,5 @@
-﻿using Castle.DynamicProxy;
+﻿
+using Castle.DynamicProxy;
 using System;
 
 namespace Core.Utilities.Interceptors
@@ -13,4 +14,5 @@ namespace Core.Utilities.Interceptors
 
         }
     }
+
 }

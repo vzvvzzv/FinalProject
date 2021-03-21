@@ -152,5 +152,10 @@ namespace Business.Concrete
 
             return null;
         }
+
+        public IDataResult<List<Product>> GetByCategoryId(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
